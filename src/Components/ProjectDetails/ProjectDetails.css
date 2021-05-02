@@ -1,0 +1,14 @@
+.links {
+  font-family: Roboto;
+  color: black;
+  font-size: 20px;
+}
+
+.carded:hover {
+  background-image: linear-gradient(to bottom, #ffffff, #fffc00);
+}
+/* .card-img-top:hover {
+  -ms-transform: scale(0.8);
+  -webkit-transform: scale(10);
+  transform: scale(10);
+} */
