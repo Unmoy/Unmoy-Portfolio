@@ -36,7 +36,7 @@ const overview = [
 ];
 const Overview = () => {
   return (
-    <div style={{ height: "600px" }}>
+    <div id="overview" style={{ height: "600px" }}>
       <h1
         style={{ textAlign: "center", fontFamily: "Roboto", marginTop: "5rem" }}
       >

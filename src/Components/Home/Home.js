@@ -19,7 +19,7 @@ const Home = () => {
                 <h2>Web Designer</h2>
               </div>
               <div className="gotosection">
-                <a href="#about">
+                <a href="#overview">
                   <FontAwesomeIcon className="font" icon={faAngleDoubleDown} />
                 </a>
               </div>
