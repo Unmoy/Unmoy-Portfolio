@@ -3,7 +3,8 @@ import "./Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "../Navbar/Navbar";
-import About from "../About/About";
+
+import Overview from "../Overview/Overview";
 
 const Home = () => {
   return (
@@ -27,7 +28,16 @@ const Home = () => {
         </div>
       </section>
       <Navbar></Navbar>
-      <About></About>
+      <Overview></Overview>
+      <div
+        style={{ color: "white", fontFamily: "Railway", fontSize: "20px" }}
+        className="text-center p-2 bg-dark mt-3"
+      >
+        <p>
+          &copy;
+          {new Date().getFullYear()} All Rights Reserved by Unmoy
+        </p>
+      </div>
     </div>
   );
 };

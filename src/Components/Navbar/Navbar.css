@@ -2,5 +2,6 @@
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: black;
+  position: sticky;
+  top: 0;
 }
- 
