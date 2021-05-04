@@ -16,7 +16,18 @@ const Home = () => {
               <div className="avatar"></div>
               <div className="info">
                 <h1 class="">Unmoy Biswas</h1>
-                <h2>Web Designer</h2>
+                <h2>WEB DESIGNER</h2>
+                <a
+                  href="https://drive.google.com/file/d/1PlihFHHPO6E_79dl00kpsPNo19ZIPE4O/view?usp=sharing"
+                  target="_blank"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-outline-light rounded-pill"
+                  >
+                    DOWNLOAD RESUME
+                  </button>
+                </a>
               </div>
               <div className="gotosection">
                 <a href="#overview">
@@ -35,7 +46,7 @@ const Home = () => {
       >
         <p>
           &copy;
-          {new Date().getFullYear()} All Rights Reserved by Unmoy
+          {new Date().getFullYear()} All Rights Reserved
         </p>
       </div>
     </div>
