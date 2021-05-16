@@ -2,7 +2,7 @@ import React from "react";
 import bytefix from "../../images/Bytefix.jpg";
 import nba from "../../images/nba.jpg";
 import transport from "../../images/transport.jpg";
-
+import "./Overview.css";
 import Workedon from "../Workedon/Workedon";
 const overview = [
   {
@@ -12,8 +12,7 @@ const overview = [
     description:
       "A servicing website built for easy ordering of any services as required by the customer ,with admin panel authentication made for securing and managing data.",
     live: "https://bytefix-9f0e7.web.app",
-    code:
-      "https://github.com/Porgramming-Hero-web-course/complete-website-client-Unmoy",
+    code: "https://github.com/Porgramming-Hero-web-course/complete-website-client-Unmoy",
   },
   {
     id: 7,
@@ -36,14 +35,25 @@ const overview = [
 ];
 const Overview = () => {
   return (
-    <div id="overview" style={{ height: "600px" }}>
+    <div
+      id="overview"
+      style={{
+        backgroundColor: "#010119",
+      }}
+    >
       <h1
-        style={{ textAlign: "center", fontFamily: "Roboto", marginTop: "5rem" }}
+        data-aos="zoom-out-up"
+        style={{
+          color: "#de1c63",
+          textAlign: "center",
+          fontFamily: "Roboto",
+          paddingTop: "50px",
+        }}
       >
         HERE ARE SOME PROJECTS I WORKED ON
       </h1>
-      <div className="d-flex justify-content-center">
-        <div className="w-75 row">
+      <div className="project-div">
+        <div className="row">
           {overview.map((project) => (
             <Workedon key={project.id} project={project}></Workedon>
           ))}

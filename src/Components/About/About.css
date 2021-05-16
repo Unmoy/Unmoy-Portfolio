@@ -1,0 +1,52 @@
+.para {
+  color: grey;
+  font-family: "KoHo", sans-serif;
+}
+.who-me {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  text-decoration: underline;
+  text-decoration-color: #de1c63;
+  text-decoration-thickness: 5px;
+}
+.about-container {
+  background-color: #131217;
+}
+.my-img {
+  box-shadow: 17px -14px 0px 5px #292929;
+}
+.custom-btn {
+  color: #b9b9b9;
+  font-family: "KoHo", sans-serif;
+  font-size: 13px;
+  background-color: #292929;
+  border: 1px solid #292929;
+  padding: 8px 25px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+.custom-icon {
+  margin-right: 5px;
+  font-size: 12px;
+}
+.about-me-logo {
+  background-image: url(../../images/aboutus.jpg);
+  background-repeat: no-repeat;
+  background-position: top-left;
+}
+.about-heading {
+  color: aliceblue;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 320px) {
+  .about-me-div {
+    text-align: center;
+  }
+  .my-responsive-img {
+    text-align: center;
+  }
+}

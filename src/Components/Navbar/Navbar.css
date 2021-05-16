@@ -1,7 +1,35 @@
-.navigation {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: black;
+.navbar {
+  background-color: transparent;
+  height: 80px;
   position: sticky;
   top: 0;
+  z-index: 999;
+}
+
+.navbar.active {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 50%;
+  position: fixed;
+  left: 25%;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-toggler.collapsed {
+  background-color: #000 !important;
+}
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255, 102, 203);
+}
+.custom-link {
+  color: white;
+  font-family: Roboto;
+  font-size: 20px;
+}
+@media (max-width: 320px) {
+  .navbar-inverse .navbar-collapse {
+    background-color: red;
+    color: white;
+  }
 }

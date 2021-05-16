@@ -3,12 +3,12 @@
   color: black;
   font-size: 20px;
 }
+.carded {
+  border-radius: 10px;
+  overflow: hidden;
+
+}
 
 .carded:hover {
-  background-image: linear-gradient(to bottom, #ffffff, #fffc00);
+  background: linear-gradient(to left, #ddd6f3, #faaca8);
 }
-/* .card-img-top:hover {
-  -ms-transform: scale(0.8);
-  -webkit-transform: scale(10);
-  transform: scale(10);
-} */

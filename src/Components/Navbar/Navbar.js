@@ -1,49 +1,68 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const [navbar, setNavbar] = useState(false);
+
+  const backgroundChange = () => {
+    if (window.scrollY >= 80) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  window.addEventListener("scroll", backgroundChange);
   return (
-    <div>
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid w-50 navigation">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 ">
-              <li class="nav-item">
-                <a class="nav-link ms-5 text-white" href="/projects">
-                  Projects
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link ms-5 text-white" href="/resume">
-                  Resume
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link ms-5 text-white" href="/contact">
-                  Contact
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link ms-5 text-white" href="/blogs">
-                  Blogs
-                </a>
-              </li>
-            </ul>
-          </div>
+    <nav
+      className={
+        navbar
+          ? "navbar navbar-expand-lg navbar-light active mx-auto"
+          : "navbar navbar-expand-lg navbar-light"
+      }
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler custom-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a className="nav-link text-white" aria-current="page" href="/">
+                <p className="custom-link">Home</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white ms-3" href="/projects">
+                <p className="custom-link">Projects</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white ms-3" href="/contact">
+                <p className="custom-link">Contacts</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white ms-3" href="/blogs">
+                <p className="custom-link">Blogs</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white ms-3" href="/resume">
+                <p className="custom-link">Resume</p>
+              </a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 };
 

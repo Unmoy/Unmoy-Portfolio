@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Workedon.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Workedon = ({ project }) => {
-  console.log(project);
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const { name, description } = project;
   return (
     <div
+      data-aos="zoom-in-up"
+      data-aos-duration="3000"
       class="project-container col-md-4"
       ontouchstart="this.classList.toggle('hover');"
     >

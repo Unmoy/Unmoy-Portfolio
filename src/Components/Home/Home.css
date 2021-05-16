@@ -11,8 +11,9 @@
   background: repeat scroll 0 0 rgba(0, 0, 0, 0.8);
   height: 100%;
 }
+
 .self-details {
-  padding: 100px 20px;
+  padding: 80px 20px;
 }
 .self-details::before {
   display: table;
@@ -21,8 +22,11 @@
 .self-details::after {
   clear: both;
 }
+.about-work {
+  font-size: 800px;
+}
 .avatar {
-  background-image: url(../../images/m1.JPG);
+  background-image: url(../../images/dp1.jpg);
   background-size: cover;
   width: 260px;
   height: 260px;
@@ -35,8 +39,7 @@
 }
 .info {
   text-align: center;
-  margin-top: 50px;
-  /* padding-bottom: 50px; */
+  margin-top: 25px;
 }
 .font {
   display: inline-block;

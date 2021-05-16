@@ -1,4 +1,5 @@
 import React from "react";
+import "./Skills.css";
 
 const Skills = () => {
   return (
@@ -69,6 +70,25 @@ const Skills = () => {
         </div>
       </div>
     </div>
+
+    // <div class="container">
+    //   <div class="card">
+    //     <div class="box">
+    //       <div class="percent">
+    //         <svg>
+    //           <circle cx="70" cy="70" r="70"></circle>
+    //           <circle cx="70" cy="70" r="70"></circle>
+    //         </svg>
+    //         <div class="num">
+    //           <h2>
+    //             90<span>%</span>
+    //           </h2>
+    //         </div>
+    //       </div>
+    //       <h2 class="text">Html</h2>
+    //     </div>
+    //   </div>
+    // </div>
   );
 };
 

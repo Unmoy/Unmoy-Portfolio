@@ -1,6 +1,9 @@
 .edu {
   font-family: Roboto;
 }
-.shadowing {
+.card-shadow {
   box-shadow: 12px 12px 2px 1px grey;
+}
+.resume-container {
+  background-color: #010119;
 }

@@ -4,9 +4,10 @@ import "./Resume.css";
 
 const Resume = () => {
   return (
-    <section className="d-flex flex-column justify-content-center bg-dark">
+    <section className="d-flex flex-column justify-content-center resume-container">
+      <h1 className="heading">Resume</h1>
       <div
-        class="card m-5 shadowing"
+        class="card m-5 card-shadow"
         style={{ maxWidth: "640px", height: "300px" }}
       >
         <h5 className="mt-3 mx-5 text-success">ABOUT</h5>
@@ -14,21 +15,22 @@ const Resume = () => {
           <div class="col-md-4 mt-2 ms-auto text-center edu"></div>
           <div class="col-md-8">
             <div class="card-body">
-              <p class="card-text">
-                Junior web developer able to build a Web presence from the
-                ground up- from concept, navigation, layout and programming to
-                UX and SEO.Knowledgeable in user interface, testing and
-                debugging processes.Highly self-motivated and adaptable in
-                learning and understanding new technologies.Able to effectively
-                self-manage during independent projects, as well as collaborate
-                in a team setting.
-              </p>
+              <div class="card-content">
+                <p>
+                  Junior web developer able to build a web presence from
+                  scratch, knowledgeable in user interface, testing and
+                  debugging processes.Highly self-motivated and adaptable in
+                  learning and understanding new technologies.Able to
+                  effectively self-manage during independent projects, as well
+                  as collaborate in a team setting.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div
-        class="card m-5 despo"
+        class="card m-5 card-shadow"
         style={{ maxWidth: "640px", height: "300px" }}
       >
         <h5 className="mt-3 mx-5 text-success">EDUCATION</h5>

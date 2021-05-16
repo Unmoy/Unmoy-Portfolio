@@ -6,6 +6,7 @@ import nba from "../../images/nba.jpg";
 import transport from "../../images/transport.jpg";
 import library from "../../images/library.jpg";
 import league from "../../images/league.jpg";
+import "./Projects.css";
 
 const projects = [
   {
@@ -15,8 +16,7 @@ const projects = [
     description:
       "Built a full stack website to allow users to order services of their required needs all at one place.Services can be booked by the users, also users can leave a review of their services which will be directly stored in our backend and admin can manage all the services and can change the status of a ordered service. admin can also make new admins for better coordination.Used- JavaScript, React.js, HTML/CSS.",
     live: "https://bytefix-9f0e7.web.app",
-    code:
-      "https://github.com/Porgramming-Hero-web-course/complete-website-client-Unmoy",
+    code: "https://github.com/Porgramming-Hero-web-course/complete-website-client-Unmoy",
   },
   {
     id: 7,
@@ -58,12 +58,18 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div>
+    <div  style={{ backgroundColor: "#010119" }}>
       <Navbar></Navbar>
-      <div className="d-flex justify-content-center">
+      <h1 className="heading">PROJECTS</h1>
+      <hr style={{ color: "#de1c63", fontSize: "50px" }} />
+      <div className=" container d-flex justify-content-center">
         <div className="w-75 row ">
           {projects.map((project) => (
-            <ProjectDetails key={project.id} project={project}></ProjectDetails>
+            <ProjectDetails
+             
+              key={project.id}
+              project={project}
+            ></ProjectDetails>
           ))}
         </div>
       </div>
