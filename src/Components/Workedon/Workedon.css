@@ -53,7 +53,7 @@
 }
 
 .card_back {
-  /*   display: none; */
+  /* display: none; */
   padding: 1em;
   background-color: white;
 }
@@ -76,9 +76,9 @@
   border-top: 8px solid #333;
 }
 
-/* .project-container {
+.project-container {
   perspective: 1000px;
-} */
+}
 
 .project-container:hover .card-container,
 .project-container.hover {

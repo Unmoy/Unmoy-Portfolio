@@ -36,6 +36,7 @@ const overview = [
 const Overview = () => {
   return (
     <div
+      className="container-fluid"
       id="overview"
       style={{
         backgroundColor: "#010119",
