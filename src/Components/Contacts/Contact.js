@@ -2,6 +2,7 @@ import React from "react";
 import emailjs from "emailjs-com";
 import { useForm } from "react-hook-form";
 import "./Contact.css";
+import Navbar from "../Navbar/Navbar";
 
 const Contact = () => {
   const { register } = useForm();
@@ -26,6 +27,7 @@ const Contact = () => {
 
   return (
     <div class="contact-container">
+      <Navbar></Navbar>
       <div class="row">
         <h1>Contact Me</h1>
       </div>

@@ -1,3 +1,8 @@
+.about-container {
+  background: #131217;
+  height: 80vh;
+  padding: 130px 0px;
+}
 .para {
   color: grey;
   font-family: "KoHo", sans-serif;
@@ -6,14 +11,14 @@
   font-family: "Work Sans", sans-serif;
   font-size: 20px;
   text-decoration: underline;
-  text-decoration-color: #de1c63;
+  text-decoration-color: #e5be55;
   text-decoration-thickness: 5px;
 }
-.about-container {
-  background-color: #131217;
-}
+
 .my-img {
   box-shadow: 17px -14px 0px 5px #292929;
+  width: 300px;
+  height: 300px;
 }
 .custom-btn {
   color: #b9b9b9;
@@ -46,7 +51,18 @@
   .about-me-div {
     text-align: center;
   }
-  .my-responsive-img {
-    text-align: center;
+  .about-container {
+    height: 100%;
+    padding: 0;
+  }
+  .my-img {
+    box-shadow: none;
+    width: 250px;
+    height: 350px;
+    border: 1px solid #e5be55;
+    margin: 10px 0px 10px 0px;
+  }
+  .about-me-logo {
+    background-image: none;
   }
 }

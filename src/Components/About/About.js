@@ -6,30 +6,15 @@ import { faEnvelope, faUser } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
   return (
-    <div
-      className="about-container"
-      style={{
-        backgroundColor: "#131217",
-        padding: "130px 0px",
-      }}
-    >
-      <div className="container-fliud row d-flex justify-content-center about-me-logo">
+    <div className="about-container ">
+      <div className="container-fluid row d-flex justify-content-center about-me-logo">
         <div
           data-aos="zoom-out-right"
           data-aos-duration="3000"
           className="col-md-4"
         >
           <div className="text-center my-responsive-img">
-            <img
-              src={me}
-              style={{
-                width: "340px",
-                height: "300px",
-                margin: "40px",
-              }}
-              className=" img-fluid my-img"
-              alt=""
-            />
+            <img src={me} className="my-img" alt="" />
           </div>
         </div>
         <div
@@ -41,21 +26,21 @@ const About = () => {
           <li className="about-heading">ABOUT ME</li>
           <p className="para">
             I have building remarkable UX/UI designes and web development for
-            and{" "}
-            <span style={{ color: "#de1c63", fontFamily: "Roboto" }}>
+            and
+            <span style={{ color: "#e5be55", fontFamily: "Roboto" }}>
               tried
-            </span>{" "}
+            </span>
             to design according to the best trends.
           </p>
           <p className="para">
             My main goal is how to create a timely product and it will help the
-            busiess to reach the peak of developemtn as a unique example in the
-            fute .I prioritizedto deign model because it is one of the best ways
-            to run a company quickly and efficiently.
+            busiess to reach the peak of developement as a unique example in the
+            future .I prioritized to deign model because it is one of the best
+            ways to run a company quickly and efficiently.
           </p>
           <div className="about-me">
             <span>
-              <span style={{ color: "#de1c63", marginRight: "5px" }}>
+              <span style={{ color: "#e5be55", marginRight: "5px" }}>
                 {" "}
                 <FontAwesomeIcon className="custom-icon" icon={faUser} />
                 Name:
@@ -65,7 +50,7 @@ const About = () => {
             <span>
               <span
                 style={{
-                  color: "#de1c63",
+                  color: "#e5be55",
                   marginLeft: "10px",
                   marginRight: "5px",
                 }}
@@ -81,7 +66,7 @@ const About = () => {
             target="_blank"
           >
             <button type="button" class="rounded-pill custom-btn">
-              DOWNLOAD <strong style={{ color: "#de1c63" }}>CV</strong>
+              DOWNLOAD <strong style={{ color: "#e5be55" }}>CV</strong>
             </button>
           </a>
         </div>

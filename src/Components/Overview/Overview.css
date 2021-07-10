@@ -1,4 +1,21 @@
-.project-div {
+.overview-container {
+  height: 100vh;
+  background-color: #0b0704;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.overview-heading {
+  color: #e5be55;
+  text-align: center;
+}
+.overview-heading h5 {
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 320px) {
+  .overview-container {
+    display: block;
+    height: 100%;
+  }
 }

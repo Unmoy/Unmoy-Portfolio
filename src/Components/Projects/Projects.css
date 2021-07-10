@@ -1,8 +1,9 @@
-.heading {
-  color: #de1c63;
+.work-container {
+  background: #0b0704;
+}
+.work-heading {
   text-align: center;
-  font-family: Roboto;
-  font-size: 50px;
-  text-decoration: underline;
- 
+  color: #e5be55;
+  margin: 50px;
+  /* font-family: Roboto Slab; */
 }

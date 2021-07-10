@@ -1,0 +1,16 @@
+.blogs-vessel {
+  height: 100vh;
+  background: #010119;
+  color: aliceblue;
+}
+.counter p {
+  font-size: 50px;
+}
+.counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  font-size: 100px;
+}

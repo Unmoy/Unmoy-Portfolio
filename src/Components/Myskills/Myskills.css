@@ -1,0 +1,16 @@
+.resume-container {
+  background-color: #010119;
+  height: 100vh;
+
+}
+.skills-heading {
+  text-align: center;
+  color: #e5be55;
+  margin: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .resume-container {
+    height: 100%;
+  }
+}

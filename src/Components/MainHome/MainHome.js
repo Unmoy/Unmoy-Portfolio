@@ -15,28 +15,10 @@ const MainHome = () => {
 
   return (
     <>
-      {!done ? (
-        <div className="loading front">
-          <div class="lds-grid">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
-      ) : (
-        <div>
-          <Home></Home>
-          <About></About>
-          <Overview></Overview>
-          <Footer></Footer>
-        </div>
-      )}
+      <Home></Home>
+      <About></About>
+      <Overview></Overview>
+      <Footer></Footer>
     </>
   );
 };

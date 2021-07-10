@@ -1,7 +1,8 @@
-.front {
+/* .front {
   background-image: url(../../images/loading-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-origin: content-box;
 }
 .loading {
   display: flex;
@@ -77,4 +78,4 @@
   50% {
     opacity: 0.5;
   }
-}
+} */

@@ -1,5 +1,5 @@
 .contact-container {
-  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  background: #e5be55;
 }
 
 .contact-container h1 {
@@ -8,11 +8,12 @@
   font-size: 72px;
   color: white;
   text-align: center;
+  margin: 0;
 }
 
 .contact-container h4 {
   font-family: "Roboto";
-  font-weight: 800;
+  font-weight: 600;
   font-size: 20px;
   line-height: 1.5;
 }

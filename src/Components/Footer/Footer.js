@@ -12,11 +12,11 @@ const Footer = () => {
         padding: "10px",
         background: "black",
       }}
-      className="text-center p-2 bg-dark "
+      className="text-center p-2 "
     >
       <p>
-        &copy;
-        {new Date().getFullYear()} All Rights Reserved
+        Copyright &copy;
+        {new Date().getFullYear()} All rights reserved
       </p>
     </div>
   );

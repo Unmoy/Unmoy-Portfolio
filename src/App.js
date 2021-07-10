@@ -1,11 +1,9 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./Components/Home/Home";
 import Contact from "./Components/Contacts/Contact";
 import Projects from "./Components/Projects/Projects";
-import Resume from "./Components/Resume/Resume";
+import Myskills from "./Components/Myskills/Myskills";
 import Blogs from "./Components/Blogs/Blogs";
-import Footer from "./Components/Footer/Footer";
 import MainHome from "./Components/MainHome/MainHome";
 
 function App() {
@@ -18,8 +16,8 @@ function App() {
         <Route path="/contact">
           <Contact></Contact>
         </Route>
-        <Route path="/resume">
-          <Resume></Resume>
+        <Route path="/skills">
+          <Myskills></Myskills>
         </Route>
         <Route path="/projects">
           <Projects></Projects>
@@ -31,7 +29,6 @@ function App() {
           <MainHome></MainHome>
         </Route>
       </Switch>
-      
     </Router>
   );
 }
