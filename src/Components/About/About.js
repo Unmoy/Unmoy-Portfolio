@@ -6,69 +6,60 @@ import { faEnvelope, faUser } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
   return (
-    <div className="about-container ">
-      <div className="container-fluid row d-flex justify-content-center about-me-logo">
-        <div
-          data-aos="zoom-out-right"
-          data-aos-duration="3000"
-          className="col-md-4"
-        >
-          <div className="text-center my-responsive-img">
-            <img src={me} className="my-img" alt="" />
-          </div>
-        </div>
-        <div
-          data-aos="zoom-out-left"
-          data-aos-duration="3000"
-          className="col-md-4 text-secondary about-me-div"
-        >
-          <p className="who-me">WHO AM I?</p>
-          <li className="about-heading">ABOUT ME</li>
-          <p className="para">
-            I have building remarkable UX/UI designes and web development for
-            and
-            <span style={{ color: "#e5be55", fontFamily: "Roboto" }}>
-              tried
-            </span>
-            to design according to the best trends.
-          </p>
-          <p className="para">
-            My main goal is how to create a timely product and it will help the
-            busiess to reach the peak of developement as a unique example in the
-            future .I prioritized to deign model because it is one of the best
-            ways to run a company quickly and efficiently.
-          </p>
-          <div className="about-me">
-            <span>
-              <span style={{ color: "#e5be55", marginRight: "5px" }}>
-                {" "}
-                <FontAwesomeIcon className="custom-icon" icon={faUser} />
-                Name:
+    <div className="about_section">
+      <div className="about_heading"></div>
+      <div className="about_container container d-flex justify-content-center flex-column">
+        <div className="about_content row">
+          <div className="col-md-6 m-auto about_con ">
+            <div className="about_sub_heading">
+              <span>Who M I?</span>
+            </div>
+            <p>
+              Hello! My name is Unmoy and I love building things for the
+              internet. I am a web devloper currently living in bangladesh. I
+              have serious passion for UI effects, animations, and creating
+              intuitive ,dynamic user experience. Although I focus on both
+              frontend and backend web development. My favorite development
+              stack at the moment is MongoDB, Express, React, Node. Fan of NBA ,
+              outdoor activities ,TV series and fictional books.
+            </p>
+            <p>
+              Whether it’s creating servers in Node, connecting to MongoDB
+              databases or designing user experiences while still maintaining a
+              consistent brand experience I will bring your ideas to life.
+            </p>
+            <div className="about-me">
+              <span>
+                <span style={{ color: "#7d7789", marginRight: "5px" }}>
+                  <FontAwesomeIcon className="custom-icon" icon={faUser} />
+                  Name:
+                </span>
+                Unmoy Biswas
               </span>
-              Unmoy Biswas
-            </span>
-            <span>
-              <span
-                style={{
-                  color: "#e5be55",
-                  marginLeft: "10px",
-                  marginRight: "5px",
-                }}
-              >
-                <FontAwesomeIcon className="custom-icon" icon={faEnvelope} />
-                Email:
+              <span>
+                <span
+                  style={{
+                    color: "#7d7789",
+                    marginLeft: "10px",
+                    marginRight: "5px",
+                  }}
+                >
+                  <FontAwesomeIcon className="custom-icon" icon={faEnvelope} />
+                  Email:
+                </span>
+                unmoyb@gmail.com
               </span>
-              u_biswas@aol.com
-            </span>
+            </div>
+            <a
+              href="https://drive.google.com/file/d/1rc63_G5IDxAIki9ibuMzNY11vCOs4QYA/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button type="button" class="rounded-pill custom-btn">
+                DOWNLOAD <strong style={{ color: "#e5be55" }}>CV</strong>
+              </button>
+            </a>
           </div>
-          <a
-            href="https://drive.google.com/file/d/1rc63_G5IDxAIki9ibuMzNY11vCOs4QYA/view?usp=sharing"
-            target="_blank"
-          >
-            <button type="button" class="rounded-pill custom-btn">
-              DOWNLOAD <strong style={{ color: "#e5be55" }}>CV</strong>
-            </button>
-          </a>
         </div>
       </div>
     </div>

@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri&display=swap");
+
+.contact_wrapper {
+  height: 100vh;
+  background-image: url(../../images/cta.png);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 30px) calc(50% + -15px);
+  font-family: "Poppins";
+}
+.contact_content {
+  display: inline-flex;
+  max-width: 300px;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact_content p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-left: 13px;
+}
+.contact_content h3 a {
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: #000;
+  line-height: 1;
+  font-family: "Amiri", serif;
+  font-weight: 400;
+  font-size: 90px;
+  display: inline-flex;
+  background-image: linear-gradient(
+    90deg,
+    #fa4529,
+    #fa4529 50%,
+    currentColor 0
+  );
+  background-position: 100% 0;
+  background-clip: text;
+  background-size: 200% 200%;
+  transition: background-position 0.8s ease-in-out;
+  -webkit-text-fill-color: transparent;
+}
+.contact_content h3 a:hover {
+  background-position: 0 100%;
+}
+@media only screen and (max-width: 600px) {
+  .contact_wrapper {
+    background: none;
+  }
+  .contact_content {
+    border: 1px solid;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  .contact_content h3 a {
+    font-size: 70px;
+  }
+}

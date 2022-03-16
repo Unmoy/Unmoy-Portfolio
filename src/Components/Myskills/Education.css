@@ -1,0 +1,262 @@
+.timeline {
+  position: relative;
+  max-width: 1140px;
+  margin: 50px auto;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background: #000;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.t_box {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 100%;
+}
+
+.t_box.left {
+  left: -50%;
+}
+
+.t_box.right {
+  left: 50%;
+}
+
+.t_box::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  right: -8px;
+  background: #ffffff;
+  border: 2px solid #006e51;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.t_box.right::after {
+  left: -8px;
+}
+
+.t_box::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 8px;
+  background: #006e51;
+  z-index: 1;
+}
+
+.t_box.right::before {
+  left: 8px;
+}
+
+.t_box .date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 8px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #006e51;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.t_box.left .date {
+  right: -75px;
+}
+.t_box .date1 {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 8px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #006e51;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.t_box.left .date1 {
+  right: -148px;
+}
+
+.t_box.right .date {
+  left: -75px;
+}
+
+.t_box .edu_icon {
+  position: absolute;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  padding: 9px 5px;
+  top: calc(50% - 20px);
+  background: #000;
+  border: 2px solid #006e51;
+  border-radius: 40px;
+  text-align: center;
+  color: #006e51;
+  z-index: 1;
+}
+
+.t_box.left .edu_icon {
+  right: 56px;
+}
+
+.t_box.right .edu_icon {
+  left: 56px;
+}
+
+.t_box .content {
+  padding: 30px 90px 30px 30px;
+  background: #000;
+  position: relative;
+  border-radius: 0 500px 500px 0;
+}
+
+.t_box.right .content {
+  padding: 30px 30px 30px 90px;
+  border-radius: 500px 0 0 500px;
+}
+
+.t_box .content h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #fff;
+  font-weight: 600;
+}
+
+.t_box .content p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  font-weight: 300;
+}
+.t_box .content h6 {
+  margin: 0;
+  font-size: 14px;
+  color: #006e51;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .timeline::after {
+    left: 90px;
+  }
+
+  .t_box {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 30px;
+  }
+
+  .t_box.right {
+    left: 0%;
+  }
+  .t_box.left {
+    left: 0%;
+  }
+
+  .t_box.left::after,
+  .t_box.right::after {
+    left: 82px;
+  }
+
+  .t_box.left::before,
+  .t_box.right::before {
+    left: 100px;
+    border-color: transparent #006e51 transparent transparent;
+  }
+
+  .t_box.left .date,
+  .t_box.right .date {
+    right: auto;
+    left: 15px;
+  }
+  .t_box.left .date1 {
+    right: 81%;
+  }
+  .t_box.left .edu_icon,
+  .t_box.right .edu_icon {
+    right: auto;
+    left: 146px;
+  }
+
+  .t_box.left .content,
+  .t_box.right .content {
+    padding: 30px 30px 30px 90px;
+    border-radius: 500px 0 0 500px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .timeline::after {
+    left: 90px;
+  }
+
+  .t_box {
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 30px;
+  }
+
+  .t_box.right {
+    left: 0%;
+  }
+  .t_box.left {
+    left: 0%;
+  }
+
+  .t_box.left::after,
+  .t_box.right::after {
+    left: 82px;
+  }
+
+  .t_box.left::before,
+  .t_box.right::before {
+    display: none;
+  }
+
+  .t_box.left .date,
+  .t_box.right .date {
+    right: auto;
+    left: 15px;
+  }
+  .t_box.left .date1 {
+    right: 74%;
+  }
+  .t_box.left .edu_icon,
+  .t_box.right .edu_icon {
+    display: none;
+  }
+
+  .t_box.left .content,
+  .t_box.right .content {
+    text-align: center;
+    padding: 30px 35px;
+    border-radius: 500px 0 0 500px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .t_box.left .content,
+  .t_box.right .content {
+    padding-right: 30px;
+  }
+}

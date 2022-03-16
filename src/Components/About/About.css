@@ -1,68 +1,65 @@
-.about-container {
-  background: #131217;
-  height: 80vh;
-  padding: 130px 0px;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+.about_section {
+  font-family: "Poppins";
+  /* position: relative; */
 }
-.para {
-  color: grey;
-  font-family: "KoHo", sans-serif;
+.about_heading {
+  position: relative;
 }
-.who-me {
-  font-family: "Work Sans", sans-serif;
-  font-size: 20px;
-  text-decoration: underline;
-  text-decoration-color: #e5be55;
-  text-decoration-thickness: 5px;
+.about_heading::before {
+  content: "About";
+  position: absolute;
+  font-size: 120px;
+  font-weight: 700;
+  width: 100%;
+  right: 5%;
+  text-align: end;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  letter-spacing: 12px;
+  color: transparent;
+  -webkit-text-stroke: 1.5px #ededed;
+  z-index: -1;
+  -webkit-text-fill-color: #ededed;
 }
-
-.my-img {
-  box-shadow: 17px -14px 0px 5px #292929;
-  width: 300px;
-  height: 300px;
-}
-.custom-btn {
-  color: #b9b9b9;
-  font-family: "KoHo", sans-serif;
-  font-size: 13px;
-  background-color: #292929;
-  border: 1px solid #292929;
-  padding: 8px 25px;
-  margin-top: 12px;
-  cursor: pointer;
-}
-.custom-icon {
-  margin-right: 5px;
-  font-size: 12px;
-}
-.about-me-logo {
-  background-image: url(../../images/aboutus.jpg);
-  background-repeat: no-repeat;
-  background-position: top-left;
-}
-.about-heading {
-  color: aliceblue;
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 30px;
-  font-weight: 600;
-  margin-bottom: 20px;
+.about_container {
+  height: 100vh;
+  /* background-color: #333; */
 }
 
-@media only screen and (max-width: 320px) {
-  .about-me-div {
-    text-align: center;
-  }
-  .about-container {
-    height: 100%;
-    padding: 0;
-  }
-  .my-img {
-    box-shadow: none;
-    width: 250px;
-    height: 350px;
-    border: 1px solid #e5be55;
-    margin: 10px 0px 10px 0px;
-  }
-  .about-me-logo {
-    background-image: none;
-  }
+.about_content p {
+  font-family: "open sans";
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #7d7789;
+}
+.about_con {
+  max-width: 650px;
+  /* height: 400px; */
+  /* border: 3px solid #333; */
+  background-color: #f6fbff;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  padding: 20px;
+  /* box-shadow: 0 0 0 10px #f3f5f6 inset; */
+}
+.about_sub_heading span {
+  display: inline-block;
+  position: relative;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 45px;
+}
+.about_sub_heading span::after {
+  position: absolute;
+  content: "";
+  width: 200%;
+  height: 1px;
+  background-color: #7d7789;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 30px;
 }

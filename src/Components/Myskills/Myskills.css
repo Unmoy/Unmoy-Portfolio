@@ -1,16 +1,33 @@
-.resume-container {
-  background-color: #010119;
-  height: 100vh;
-
+.skills_container {
+  background-color: #f6f5fc;
+  font-family: "Poppins";
 }
-.skills-heading {
+.skills_header {
   text-align: center;
-  color: #e5be55;
-  margin: 50px;
+  margin: 40px;
 }
-
+.skills_header h1 {
+  font-weight: 700;
+  font-size: 30px;
+}
+.skills_header p {
+  color: #b4b4b4;
+  max-width: 600px;
+}
+.tools_header h1 {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  margin: 40px;
+}
+.education_header h1 {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  margin: 40px;
+}
 @media only screen and (max-width: 600px) {
-  .resume-container {
+  .skills_container {
     height: 100%;
   }
 }

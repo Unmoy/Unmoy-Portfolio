@@ -1,9 +1,47 @@
-.work-container {
-  background: #0b0704;
+.work_container {
+  background: #f6f5fc;
 }
-.work-heading {
-  text-align: center;
-  color: #e5be55;
-  margin: 50px;
-  /* font-family: Roboto Slab; */
+.work_heading {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: 600;
+  padding: 50px 100px;
+  position: relative;
+}
+.work_heading::after {
+  content: "";
+  position: absolute;
+  top: 66px;
+  width: 300px;
+  height: 1px;
+  margin-left: 30px;
+  background-color: #000;
+}
+.work {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.projects {
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 750px) {
+  .work_heading::after {
+    display: none;
+  }
+  .work_heading {
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
+    padding: 20px 0;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .work_heading {
+    font-size: 20px;
+  }
 }
